@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAlertActivity">
+
+    <TextView
+        android:id="@+id/alert_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:padding="20dp"
+        android:text="MEDICAL REMINDER"
+        android:textAlignment="center"
+        android:textColor="#f7f7f7"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/alert_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_alert_drugname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter drug name"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/input_alert_number_of_drugs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter number of drugs"
+                android:inputType="number"/>
+
+            <DatePicker
+                android:id="@+id/input_alert_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Date time"
+                android:inputType="date"/>
+
+            <TimePicker
+                android:id="@+id/input_alert_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:id="@+id/add_alert_button"
+                android:text="Add Medical Reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

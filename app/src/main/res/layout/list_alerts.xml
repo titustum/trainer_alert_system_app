@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/drugname_alerted"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Capsule id"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drugno_alerted"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_alerted"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="1:00PM"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bell_image_icon"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/alarm_icon_foreground" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
